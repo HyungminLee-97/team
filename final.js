@@ -38,9 +38,9 @@ let ball = 0;
 
 function match(userAnswer) {
     for (let i = 0; i < userAnswer.length; i++) {
-        if (Number(userAnswer[i]) == answerArr[i]) {
+        if (Number(userAnswer[i]) === answerArr[i]) {
             strike++;
-        } else if (answerArr.includes(Number(userAnswer))) {
+        } else if (answerArr.includes(Number(userAnswer[i]))) {
             ball++;
         }
     }
